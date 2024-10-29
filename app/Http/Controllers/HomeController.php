@@ -68,13 +68,13 @@ class HomeController extends Controller
         $suggested_users[] = $user;
       }
     }
-    //return $suggested_users;
+    return $suggested_users;
     //indexメソッドへ
     //これの代わりに下記を置く
 
     #Activity: try to limit only 3 users to be displayed in "Suggestions User"
 
-    return array_slice($suggested_users, 0, 3);
+    // return array_slice($suggested_users, 0, 3);
     //array_slice(x,y,z);
     //x --name of the array
     //y --offset/starting index
